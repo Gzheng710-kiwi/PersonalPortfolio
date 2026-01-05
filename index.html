@@ -7,22 +7,35 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Header -->
-    <header class="site-header">
-      <div class="brand">
-        <span class="dot" aria-hidden="true"></span>
-        <div class="brand-text">
-          <span class="name">Ge Zheng</span>
-          <span class="role">Student</span>
-        </div>
-      </div>
+<header class="site-header">
+    <div class="brand">
+    <span class="dot"></span>
+    <div class="brand-text">
+      <span class="name">Ge Zheng</span>
+      <span class="role">Student</span>
+    </div>
+  </div>
 
-      <nav class="nav">
-        <a href="#resume">Resume</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
+
+  <nav class="nav">
+    <a href="#resume">Resume</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+  <label for="nav-toggle" class="hamburger">
+    <span></span><span></span><span></span>
+  </label>
+
+  <nav class="nav-overlay">
+    <label for="nav-toggle" class="close-btn">✕</label>
+    <a href="#resume">Resume</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
 
     <!-- Main -->
     <main class="hero">
@@ -48,7 +61,7 @@
           </p>
 
           <div class="cta">
-            <a class="pill pill-yellow" href="#resume">Resume</a>
+            <a class="pill pill-yellow" href="#resume">Resume</a> 
             <a class="pill pill-red" href="#projects">Projects</a>
             <a class="pill pill-blue" href="#contact">Contact</a>
           </div>
