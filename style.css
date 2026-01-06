@@ -11,7 +11,7 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: #111;
-  background: #e8e5e5;
+  background: #eeeeee;
   font-size: 1.125rem;
   line-height: 1.5;
 }
@@ -88,7 +88,7 @@ a {
 .nav-overlay {
   position: fixed;
   inset: 0; /* top right bottom left = 0 */
-  background: #e8e5e5;
+  background: #eeeeee;
   display: none;
   flex-direction: column;
   align-items: center;
@@ -132,8 +132,6 @@ a {
     position: absolute;
     top: 60px;
     right: 16px;
-    background: #fff;
-    border: 1px solid #ddd;
     padding: 12px 16px;
     display: none;
     flex-direction: column;
@@ -220,7 +218,7 @@ a {
 
 /* Minimal hover (optional, subtle) */
 .pill:hover {
-  background-color: #e8e5e5ad;
+  background-color: #eeeeee;
 }
 
 /* Sections (optional anchors) */
@@ -571,7 +569,7 @@ a {
   padding: 10px 12px;
   border: 1px solid #111;
   font-size: 14px;
-  background: #e8e5e5;
+  background: #eeeeee;
   outline: none;
 }
 /* Submit */
@@ -588,7 +586,7 @@ a {
 }
 
 .submit-btn:hover {
-  background: #e8e5e5;
+  background: #eeeeee;
 }
 
 /* Responsive */
