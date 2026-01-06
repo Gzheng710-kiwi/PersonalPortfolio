@@ -10,18 +10,139 @@
     <!-- Header -->
     <header class="site-header">
       <div class="brand">
-        <span class="dot" aria-hidden="true"></span>
-        <div class="brand-text">
+        <span class="dot"></span>
+        <a href="index.html" class="brand-text">
           <span class="name">Ge Zheng</span>
           <span class="role">Student</span>
-        </div>
+        </a>
       </div>
 
       <nav class="nav">
-        <a href="#resume">Resume</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <a href="resume.html" class="active">Resume</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <label for="nav-toggle" class="hamburger">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="nav-overlay">
+        <label for="nav-toggle" class="close-btn">✕</label>
+        <a href="resume.html">Resume</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
       </nav>
     </header>
+    <main class="page">
+      <h1 class="page-title">Resume</h1>
+
+      <!-- Skills -->
+      <section class="resume-section">
+        <div class="section-grid">
+          <h2 class="section-title">Skills</h2>
+          <div class="section-content">
+            <article class="entry">
+    <div class="entry-date"></div>
+    <div class="entry-body">
+      <ul class="skill-list">
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+  <hr class="divider" />
+      <!-- Work Experience -->
+      <section class="resume-section">
+        <div class="section-grid">
+          <h2 class="section-title">Work<br />Experience</h2>
+
+          <div class="section-content">
+            <article class="entry">
+              <div class="entry-date">2020 - Present</div>
+              <div class="entry-body">
+                <h3 class="entry-role">Owner</h3>
+                <p class="entry-desc">
+                  I’m a paragraph. Click here to add your own text and edit me.
+                  It’s easy. Just click “Edit Text” or double click me to add
+                  your own content and make changes.
+                </p>
+              </div>
+            </article>
+
+            <article class="entry">
+              <div class="entry-date">2035 - 2035</div>
+              <div class="entry-body">
+                <h3 class="entry-role">Writer at Large</h3>
+                <p class="entry-desc">
+                  I’m a paragraph. Click here to add your own text and edit me.
+                  It’s easy. Just click “Edit Text” or double click me to add
+                  your own content and make changes.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <hr class="divider" />
+
+      <!-- Education -->
+      <section class="resume-section">
+        <div class="section-grid">
+          <h2 class="section-title">Education</h2>
+
+          <div class="section-content">
+            <article class="entry">
+              <div class="entry-date">2025 - Present</div>
+              <div class="entry-body">
+                <h3 class="entry-role">BCIT | Diploma</h3>
+                <p class="entry-desc">
+                  I’m a paragraph. Click here to add your own text and edit me.
+                  Let your users get to know you.
+                </p>
+              </div>
+            </article>
+
+            <article class="entry">
+              <div class="entry-date">2035 - 2035</div>
+              <div class="entry-body">
+                <h3 class="entry-role">Establishment Name | Bachelor’s Degree</h3>
+                <p class="entry-desc">
+                  I’m a paragraph. Click here to add your own text and edit me.
+                  Let your users get to know you.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <hr class="divider" />
+    <!-- Footer -->
+    <footer class="site-footer" id="contact">
+      <div class="footer-grid">
+        <div class="footer-item">
+          <div class="label">Phone</div>
+          <div class="value">604-729-0710</div>
+        </div>
+
+        <div class="footer-item">
+          <div class="label">Email</div>
+          <div class="value">
+            <a href="mailto:ge@example.com">gzheng12@my.bcit.ca</a>
+          </div>
+        </div>
+
+        <div class="footer-item copyright">
+          <div class="value">© 2026 By Ge Zheng.</div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
