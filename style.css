@@ -394,15 +394,25 @@ a {
   margin: 0 0 24px;
 }
 
-/* Skills list */
-.skill-list {
+/* Skills */
+.skills {
   margin: 0;
-  padding-left: 0;
-  list-style-position: inside;
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-  font-size: 15px;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 160px 1fr; /* 左列宽度自己调 */
+  column-gap: 28px;
+  row-gap: 10px;
+}
+
+.skills dt {
+  margin: 0;
+  font-weight: 600;
+  font-size: 15xp;
+}
+
+.skills dd {
+  margin: 0;
+  font-size: 15xp; /* dd 默认有 margin，要清掉 */
 }
 
 /* Responsive */
