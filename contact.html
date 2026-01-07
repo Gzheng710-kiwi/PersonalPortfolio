@@ -54,38 +54,51 @@
         </div>
 
         <!-- Right -->
+
         <div class="contact-right">
-          <form class="contact-form">
+          <form
+            class="contact-form"
+            action="https://formspree.io/f/xpqwvqzo"
+            method="POST"
+          >
             <div class="row two">
               <div class="field">
                 <label>First Name *</label>
-                <input type="text" required />
+                <input type="text" name="firstName" required />
               </div>
 
               <div class="field">
                 <label>Last Name *</label>
-                <input type="text" required />
+                <input type="text" name="lastName" required />
               </div>
             </div>
 
             <div class="row two">
               <div class="field">
                 <label>Email *</label>
-                <input type="email" required />
+                <input type="email" name="email" required />
               </div>
 
               <div class="field">
                 <label>Subject</label>
-                <input type="text" />
+                <input type="text" name="subject" />
               </div>
             </div>
 
             <div class="row one">
               <div class="field">
                 <label>Message</label>
-                <textarea rows="6"></textarea>
+                <textarea name="message" rows="6"></textarea>
               </div>
             </div>
+
+            <input
+              type="text"
+              name="_gotcha"
+              style="display: none"
+              tabindex="-1"
+              autocomplete="off"
+            />
 
             <button class="submit-btn" type="submit">Submit</button>
           </form>
