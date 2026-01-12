@@ -407,12 +407,11 @@ a {
 .skills dt {
   margin: 0;
   font-weight: 600;
-  font-size: 15xp;
 }
 
 .skills dd {
   margin: 0;
-  font-size: 15xp; /* dd 默认有 margin，要清掉 */
+  font-size: 14px; /* dd 默认有 margin，要清掉 */
 }
 
 /* Responsive */
