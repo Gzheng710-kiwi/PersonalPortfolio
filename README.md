@@ -1,2 +1,2 @@
 # PersonalPortfolio
-Ge's  Personal Portfolio Responsive website using HTML CSS and JavaScript
+Ge's  Personal Portfolio Responsive website using HTML CSS
