@@ -8,8 +8,7 @@ html {
 }
 body {
   margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #111;
   background: #eeeeee;
   font-size: 1.125rem;
@@ -21,6 +20,7 @@ body {
   padding: 40px 24px 80px;
 }
 .page-title {
+  font-family: "Gravitas One", serif;
   font-size: 56px;
   margin: 30px 0 40px;
   letter-spacing: -0.5px;
@@ -203,6 +203,32 @@ a {
   font-weight: 700;
   font-size: 20px;
   border: 1px solid #111;
+}
+@keyframes flyUp {
+  from {
+    transform: translateY(32px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.cta .pill {
+  opacity: 0;
+  transform: translateY(32px);
+  animation: flyUp 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+.cta .pill:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.cta .pill:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.cta .pill:nth-child(3) {
+  animation-delay: 0.5s;
 }
 
 /* Simple colors */
@@ -613,4 +639,52 @@ a {
   .page-title {
     font-size: 44px;
   }
+}
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 680px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 14px;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.4s ease;
+  z-index: 1;
+}
+
+.carousel-track img {
+  width: 100%;
+  flex-shrink: 0;
+  display: block;
+}
+
+/* 左右按钮 */
+.carousel .nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  pointer-events: auto;
+  background: rgba(0, 0, 0, 0.45);
+  color: white;
+  border: none;
+  font-size: 28px;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.carousel .prev {
+  left: 10px;
+}
+
+.carousel .next {
+  right: 10px;
+}
+
+.carousel .nav:hover {
+  background: rgba(0, 0, 0, 0.65);
 }

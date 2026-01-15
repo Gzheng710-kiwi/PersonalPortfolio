@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Ge's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -71,10 +74,18 @@
           </div>
 
           <!-- Right: image -->
-          <div class="project-media">
-            <img src="./images/logo-f.png" alt="Project screenshot" />
-          </div>
-        </div>
+                   <div class="project-media carousel">
+  <button class="nav prev" aria-label="Previous image">‹</button>
+
+  <div class="carousel-track">
+    <img src="./images/fridge1.png" alt="screenshot 1" />
+    <img src="./images/fridge2.png" alt="screenshot 2" />
+    <img src="./images/fridge3.png" alt="screenshot 3" />
+    <img src="./images/fridge4.png" alt="screenshot 4" />
+  </div>
+
+  <button class="nav next" aria-label="Next image">›</button>
+</div>
       </section>
 
       <hr class="divider" />
@@ -91,7 +102,6 @@
               code with docstrings and basic tests.
             </p>
             <div class="project-links">
-              <a href="#" class="link">Live Demo</a>
               <a
                 href="https://github.com/Gzheng710-kiwi/TermProjectSnowFlake"
                 class="link"
@@ -100,10 +110,18 @@
             </div>
           </div>
 
-          <div class="project-media">
-            <img src="./images/game.png" alt="Project screenshot" />
-          </div>
-        </div>
+          <div class="project-media carousel">
+  <button class="nav prev" aria-label="Previous image">‹</button>
+
+  <div class="carousel-track">
+    <img src="./images/game.png" alt="Snowflake game screenshot 1" />
+    <img src="./images/game1.png" alt="Snowflake game screenshot 2" />
+    <img src="./images/game3.png" alt="Snowflake game screenshot 3" />
+    <img src="./images/game4.png" alt="Snowflake game screenshot 4" />
+  </div>
+
+  <button class="nav next" aria-label="Next image">›</button>
+</div>
       </section>
     </main>
 
@@ -127,5 +145,30 @@
         </div>
       </div>
     </footer>
+    <script src="./js/main.js"></script>
   </body>
 </html>
+<script>
+  document.querySelectorAll(".project-media.carousel").forEach((carousel) => {
+    const track = carousel.querySelector(".carousel-track");
+    const images = carousel.querySelectorAll(".carousel-track img");
+    const prevBtn = carousel.querySelector(".prev");
+    const nextBtn = carousel.querySelector(".next");
+
+    let index = 0;
+
+    function updateCarousel() {
+      track.style.transform = `translateX(-${index * 100}%)`;
+    }
+
+    nextBtn.addEventListener("click", () => {
+      index = (index + 1) % images.length;
+      updateCarousel();
+    });
+
+    prevBtn.addEventListener("click", () => {
+      index = (index - 1 + images.length) % images.length;
+      updateCarousel();
+    });
+  });
+</script>
